@@ -22,7 +22,6 @@ const NAV_ITEMS = [
 export default function DashboardAdmin() {
   const { usuario, cerrarSesion } = useAuth();
   const { colors } = useTheme();
-  const { esTablet } = useResponsive();
   const [paginaActual, setPaginaActual] = useState('dashboard');
 
   const iniciales = usuario.email

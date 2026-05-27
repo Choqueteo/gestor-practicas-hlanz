@@ -100,10 +100,7 @@ export default function EditarPerfil({ onVolver }) {
             </div>
             <div style={estilos.infoItem}>
               <div style={estilos.infoLabel}>Rol</div>
-              <div style={estilos.infoValor} style={{
-                color: colors.orange,
-                textTransform: 'capitalize'
-              }}>
+              <div style={{ ...estilos.infoValor, color: colors.orange }}>
                 {usuario.rol}
               </div>
             </div>

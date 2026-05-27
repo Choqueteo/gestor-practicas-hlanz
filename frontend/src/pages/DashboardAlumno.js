@@ -97,9 +97,7 @@ function SeccionDashboard({ onIrA }) {
       <div style={{
         ...estilos.banner,
         borderColor: estaAsignado ? colors.green : colors.amber,
-        background: estaAsignado
-          ? (colors === colors ? colors.greenBg : '#d1fae5')
-          : (colors === colors ? colors.amberBg : '#fef3c7'),
+        background: estaAsignado ? colors.greenBg  : colors.amberBg,
       }}>
         <span style={estilos.bannerIcon}>
           {cargando ? '⏳' : estaAsignado ? '✅' : '⏳'}

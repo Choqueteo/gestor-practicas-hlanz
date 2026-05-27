@@ -10,7 +10,6 @@ export default function Sidebar({ rol, iniciales, nombre, items, paginaActual, o
   const [menuAbierto, setMenuAbierto] = useState(false);
   const { esMobil } = useResponsive();
 
-  const cerrarMenu = () => setMenuAbierto(false);
   
   // En móvil mostramos un botón flotante y un overlay
   if (esMobil) {
